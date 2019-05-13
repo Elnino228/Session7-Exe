@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        canvas {
+
+
+        }
+    </style>
+</head>
+<body>
+<p id="result"></p>
+<script>
+    function Temperature(temp_C) {
+        this.value = temp_C;
+        this.toF = temp_C*1.8+32 ;
+        this.toKenvin =temp_C+273;
+    }
+    //khoi tao temp
+    let temp =new Temperature(25);
+    document.write(temp.value+'doC' +'<br>');
+    document.write(temp.toF +'doF'+'<br>');
+    document.write(temp.toKenvin+'doK');
+</script>
+</body>
+</html>
